@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cj.patience.tentsizer.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/background"
+        android:text="@string/order_now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tent_sizes2" />
+
+    <TextView
+        android:id="@+id/available_sizes"
+        style="@style/Sizes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/availablesizes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/company_email" />
+
+    <TextView
+        android:id="@+id/tent_sizes"
+        style="@style/Sizes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tentsizes"
+        app:layout_constraintStart_toStartOf="@+id/available_sizes"
+        app:layout_constraintTop_toBottomOf="@+id/available_sizes" />
+
+    <TextView
+        android:id="@+id/tent_sizes1"
+        style="@style/Sizes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tentsizes1"
+        app:layout_constraintStart_toStartOf="@+id/available_sizes"
+        app:layout_constraintTop_toBottomOf="@+id/tent_sizes" />
+
+    <TextView
+        android:id="@+id/tent_sizes2"
+        style="@style/Sizes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tentsizes2"
+        app:layout_constraintStart_toStartOf="@+id/available_sizes"
+        app:layout_constraintTop_toBottomOf="@+id/tent_sizes1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="215dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_circus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ComapnyInfo"
+        android:text="Tents"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/company_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ComapnyInfo"
+        android:text="316-555-5555"
+        android:autoLink="phone"
+        app:layout_constraintEnd_toEndOf="@+id/company_name"
+        app:layout_constraintStart_toStartOf="@+id/company_name"
+        app:layout_constraintTop_toBottomOf="@+id/company_name" />
+
+    <TextView
+        android:id="@+id/company_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ComapnyInfo"
+        android:text="tents@tents.com"
+        android:autoLink="email"
+        app:layout_constraintEnd_toEndOf="@+id/company_phone"
+        app:layout_constraintStart_toStartOf="@+id/company_phone"
+        app:layout_constraintTop_toBottomOf="@+id/company_phone" />
+
+</android.support.constraint.ConstraintLayout>

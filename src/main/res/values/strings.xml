@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tent Sizer</string>
+    <string name="order_now">ORDER</string>
+    <string name="title_activity_order">Order</string>
+    <string name="start_order">Place Corner</string>
+    <string name="delete_corner">Delete Corner</string>
+    <string name="availablesizes">Available Sizes :</string>
+    <string name="tentsizes">20x20, 20x40, 20x60</string>
+    <string name="tentsizes1">40x40, 40x60, 40x80, 40x100</string>
+    <string name="tentsizes2">60x60, 60x80, 60x100</string>
+</resources>

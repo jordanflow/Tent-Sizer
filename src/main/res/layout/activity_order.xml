@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cj.patience.tentsizer.Order"
+    android:background="@drawable/tentbg">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:text="@string/start_order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226" />
+
+    <TextView
+        android:id="@+id/autoupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance"
+        style="@style/Buttons"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/first_Corner"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="First Corner"
+        style="@style/Buttons"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/second_Corner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Corner"
+        style="@style/Buttons"
+        app:layout_constraintStart_toStartOf="@+id/first_Corner"
+        app:layout_constraintTop_toBottomOf="@+id/first_Corner" />
+
+    <TextView
+        android:id="@+id/third_Corner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Third Corner"
+        style="@style/Buttons"
+        app:layout_constraintStart_toStartOf="@+id/second_Corner"
+        app:layout_constraintTop_toBottomOf="@+id/second_Corner" />
+
+    <TextView
+        android:id="@+id/tent_size"
+        style="@style/Buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tent Size"
+        app:layout_constraintStart_toStartOf="@+id/autoupdate"
+        app:layout_constraintTop_toBottomOf="@+id/autoupdate" />
+
+    <Button
+        android:id="@+id/delete_corner"
+        style="@style/Buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="56dp"
+        android:background="@color/background"
+        android:text="Delete Corner"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/caution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="***Allow 6-8ft per corner for Stakes***"
+        style="@style/Buttons"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/start_placing_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="30dp"
+        android:text="Submit"
+        android:background="@color/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
